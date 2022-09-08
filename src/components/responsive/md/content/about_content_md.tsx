@@ -1,8 +1,8 @@
 import {Card, Carousel, Col, Row} from "antd";
 import React, {useLayoutEffect, useRef, useState} from "react";
-import image1 from "../../../../images/bda1_2.png";
-import image2 from "../../../../images/bda2_2.png";
-import image3 from "../../../../images/bda3_2.png";
+import image1 from "../../../../images/bda1.png";
+import image2 from "../../../../images/bda2.png";
+import image3 from "../../../../images/bda3.png";
 import image4 from "../../../../images/about1.png"
 import image5 from "../../../../images/about2.png"
 import image6 from "../../../../images/about3.png"
@@ -309,7 +309,7 @@ export function CarouselContent1() {
         <div>
             <Row>
                 <Col>
-                    <img src={image1} className="img-centered" alt=""/>
+                    <img src={image1} className="img-centered-carousel" alt=""/>
                 </Col>
             </Row>
         </div>
@@ -321,7 +321,7 @@ export function CarouselContent2() {
         <div>
             <Row>
                 <Col>
-                    <img src={image2} className="img-centered" alt=""/>
+                    <img src={image2} className="img-centered-carousel" alt=""/>
                 </Col>
             </Row>
         </div>
@@ -333,7 +333,7 @@ export function CarouselContent3() {
         <div>
             <Row>
                 <Col>
-                    <img src={image3} className="img-centered" alt=""/>
+                    <img src={image3} className="img-centered-carousel-carousel" alt=""/>
                 </Col>
             </Row>
         </div>

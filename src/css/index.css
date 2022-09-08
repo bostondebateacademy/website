@@ -421,6 +421,10 @@ p {
     width: 60%;
 }
 
+.img-centered-carousel {
+    width: 100%;
+}
+
 .h1-footer {
     color: white;
     font-size: 18pt;

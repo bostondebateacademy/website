@@ -47,13 +47,13 @@ export default function PageFooterLG() {
                     <h4 className="h4-footer">Contact</h4>
                     <p>
                         <FacebookOutlined style={{color: "white", paddingRight: "10px"}}/>
-                        <a className="a-footer" href="https://www.facebook.com/BostonDebateAcademy">
+                        <a className="a-footer" href="https://www.facebook.com/BostonDebateAcademy" target="_blank" rel="noopener noreferrer">
                             Facebook
                         </a>
                     </p>
                     <p>
                         <InstagramOutlined style={{color: "white", paddingRight: "10px"}}/>
-                        <a className="a-footer" href="https://www.instagram.com/bostondebateacademy/">
+                        <a className="a-footer" href="https://www.instagram.com/bostondebateacademy/" target="_blank" rel="noopener noreferrer">
                             Instagram
                         </a>
                     </p>
