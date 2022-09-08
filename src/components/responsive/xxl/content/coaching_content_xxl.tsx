@@ -65,7 +65,8 @@ export default function CoachingContentXXL() {
                                 <li>Custom-made drills</li>
                             </ul>
                         </p>
-                        <Button type="primary" ghost block onClick={event =>  window.location.href='/classes'}
+                        <Button type="primary" ghost block
+                                onClick={event =>  window.open('https://wd84sdlr.paperform.co/', "_blank")}
                                 style={{width: "60%", position: "absolute", top: buttonY, left: buttonX-20}}
                         >
                             Select this kit
@@ -99,7 +100,8 @@ export default function CoachingContentXXL() {
                                 <li>3 rounds of case editing</li>
                             </ul>
                         </p>
-                        <Button type="primary" ghost block onClick={event =>  window.location.href='/classes'}
+                        <Button type="primary" ghost block
+                                onClick={event =>  window.open('https://wd84sdlr.paperform.co/', "_blank")}
                                 style={{width: "60%", marginLeft: "20%", marginRight: "20%"}}
                                 ref={btnref}
                         >
@@ -129,7 +131,8 @@ export default function CoachingContentXXL() {
                                 <li>Progressive arguments kit</li>
                             </ul>
                         </p>
-                        <Button type="primary" ghost block onClick={event =>  window.location.href='/classes'}
+                        <Button type="primary" ghost block
+                                onClick={event =>  window.open('https://wd84sdlr.paperform.co/', "_blank")}
                                 style={{width: "60%", fontSize: "14pt", position: "absolute", top: buttonY, left: buttonX-20}}
                         >
                             Select this kit
@@ -310,7 +313,7 @@ export default function CoachingContentXXL() {
                 <Button
                     className="btn-signup"
                     size="large"
-                    onClick={event =>  window.location.href='/classes'}
+                    onClick={event =>  window.open('https://wd84sdlr.paperform.co/', "_blank")}
                     style={{width: "20%", minWidth: "400px",height: "60px", fontSize: "16pt", borderRadius: "10px", marginBottom: "50px"}}
                 >
                     Ready to win? Select a kit now!
