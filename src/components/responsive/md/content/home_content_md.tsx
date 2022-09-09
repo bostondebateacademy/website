@@ -116,7 +116,7 @@ export default function HomeContentMD() {
             </Row>
             <Row style={{paddingTop: "50px", paddingBottom: "50px", background: "#F2F2F2"}}>
                 <Col
-                    md={{span: 22, offset: 1}}
+                    md={{span: 20, offset: 2}}
                 >
                     <h1 className="h1-content">
                         Student tested, Student approved.

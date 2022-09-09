@@ -117,7 +117,7 @@ export default function HomeContentLG() {
 
             <Row style={{paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    lg={{span: 22, offset: 1}}
+                    lg={{span: 20, offset: 2}}
                 >
                     <h1 className="h1-content">
                         Student tested, Student approved.

@@ -165,7 +165,7 @@ export function Carousel2Content1() {
                         className='react-player fixed-bottom'
                         url= {video_sam}
                         width="140%"
-                        height="100%"
+                        height="500px"
                         volume={0.5}
                         controls = {true}
                         config={{ file: {
@@ -201,7 +201,7 @@ export function Carousel2Content2() {
                         className='react-player fixed-bottom'
                         url= {video_alyssa}
                         width="140%"
-                        height="100%"
+                        height="500px"
                         volume={0.5}
                         controls = {true}
                         config={{ file: {
