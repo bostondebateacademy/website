@@ -9,6 +9,7 @@ import image_max from "../../../../images/aboutmax2.png";
 import video_sam from "../../../../videos/sam_testimonial_final.mp4";
 import video_alyssa from "../../../../videos/alyssa_testimonial_final.mp4";
 import image1 from "../../../../images/home1.png"
+import img_awards from "../../../../images/awards.png";
 
 
 export default function HomeContentMD() {
@@ -51,6 +52,13 @@ export default function HomeContentMD() {
                             <Carousel1Content1 />
                         </div>
                     </Carousel>
+                </Col>
+            </Row>
+            <Row style={{paddingBottom: "100px"}}>
+                <Col
+                    md={{span: 20, offset: 2}}
+                >
+                    <img src={img_awards} className="img-centered" style={{width: "100%"}} alt=""/>
                 </Col>
             </Row>
             <Row style={{paddingTop: "50px", background: "#F2F2F2"}}>

@@ -9,6 +9,7 @@ import image_max from "../../../../images/aboutmax2.png";
 import video_sam from "../../../../videos/sam_testimonial_final.mp4";
 import video_alyssa from "../../../../videos/alyssa_testimonial_final.mp4";
 import image1 from "../../../../images/home1.png"
+import img_awards from "../../../../images/awards.png";
 
 
 export default function HomeContentLG() {
@@ -26,7 +27,7 @@ export default function HomeContentLG() {
 
     return (
         <div style={{marginTop: "100px"}}>
-            <Row style={{paddingBottom: "200px"}}>
+            <Row style={{paddingBottom: "100px"}}>
                 <Col
                     lg={{span: 10, offset: 1}}
                 >
@@ -49,6 +50,13 @@ export default function HomeContentLG() {
                             <Carousel1Content1 />
                         </div>
                     </Carousel>
+                </Col>
+            </Row>
+            <Row style={{paddingBottom: "200px"}}>
+                <Col
+                    lg={{span: 22, offset: 1}}
+                >
+                    <img src={img_awards} className="img-centered" style={{width: "70%"}} alt=""/>
                 </Col>
             </Row>
             <Row style={{paddingTop: "100px", background: "#F2F2F2"}}>

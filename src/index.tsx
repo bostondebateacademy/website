@@ -25,7 +25,7 @@ root.render(
         <Content className="content">
             <Routing/>
         </Content>
-        <Divider style={{background: "#F2F2F2", borderColor: "#2B2D42", borderWidth: 3, marginBottom: "50px"}}/>
+        <Divider style={{background: "#F2F2F2", borderColor: "#2B2D42", borderWidth: 3, marginBottom: "50px"}} />
         <Footer className="footer-signup">
             <PageFooterSignUp />
         </Footer>

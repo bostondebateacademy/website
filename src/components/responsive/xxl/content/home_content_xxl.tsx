@@ -9,6 +9,7 @@ import image_max from "../../../../images/aboutmax2.png";
 import video_sam from "../../../../videos/sam_testimonial_final.mp4";
 import video_alyssa from "../../../../videos/alyssa_testimonial_final.mp4";
 import image1 from "../../../../images/home1.png"
+import img_awards from "../../../../images/awards.png"
 
 
 export default function HomeContentXXL() {
@@ -26,7 +27,7 @@ export default function HomeContentXXL() {
 
     return (
         <div style={{marginTop: "100px"}}>
-            <Row style={{paddingBottom: "200px"}}>
+            <Row style={{paddingBottom: "150px"}}>
                 <Col
                     xxl={{span: 8, offset: 3}}
                     xl={{span: 10, offset: 1}}
@@ -51,6 +52,14 @@ export default function HomeContentXXL() {
                             <Carousel1Content1 />
                         </div>
                     </Carousel>
+                </Col>
+            </Row>
+            <Row style={{paddingBottom: "200px"}}>
+                <Col
+                    xxl={{span: 18, offset: 3}}
+                    xl={{span: 22, offset: 1}}
+                >
+                    <img src={img_awards} className="img-centered" style={{width: "70%"}} alt=""/>
                 </Col>
             </Row>
 
@@ -79,7 +88,7 @@ export default function HomeContentXXL() {
                     xl={{span: 5, offset: 1}}
                 >
                     <ReactCardFlip isFlipped={flippedBen} flipDirection="horizontal">
-                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", cursor: "pointer"}} alt=""/>
+                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", height: "560px", objectFit: "cover", cursor: "pointer"}} alt=""/>
                         <Card
                             title={<h3 className="h3-content">Ben Carson</h3>}
                             // eslint-disable-next-line
@@ -95,7 +104,7 @@ export default function HomeContentXXL() {
                     xl={{span: 5, offset: 1}}
                 >
                     <ReactCardFlip isFlipped={flippedMax} flipDirection="horizontal">
-                        <img src={image_max} onClick={FlipMax} style={{width: "100%", cursor: "pointer"}} alt=""/>
+                        <img src={image_max} onClick={FlipMax} style={{width: "100%", height: "560px", objectFit: "cover", cursor: "pointer"}} alt=""/>
                         <Card
                             title={<h3 className="h3-content">Max Albert</h3>}
                             // eslint-disable-next-line
@@ -108,7 +117,6 @@ export default function HomeContentXXL() {
                 </Col>
                 <Divider style={{borderColor: "#2B2D42", borderWidth: 3, marginTop: "100px"}}/>
             </Row>
-
 
             <Row style={{paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
@@ -163,7 +171,6 @@ export default function HomeContentXXL() {
     );
 }
 
-
 export function Carousel2Content1() {
     return (
         <div>
@@ -172,14 +179,15 @@ export function Carousel2Content1() {
                     <ReactPlayer
                         className='react-player fixed-bottom'
                         url= {video_sam}
-                        width="139%"
-                        height="auto"
+                        width="140%"
+                        height="100%"
                         volume={0.5}
                         controls = {true}
                         config={{ file: {
                                 attributes: {
                                     controlsList: 'nodownload nofullscreen noremoteplayback'
                                 }}}}
+                        style={{objectFit: "cover"}}
                     />
                 </Col>
                 <Col span={12} offset={4}>
@@ -207,14 +215,15 @@ export function Carousel2Content2() {
                     <ReactPlayer
                         className='react-player fixed-bottom'
                         url= {video_alyssa}
-                        width="139%"
-                        height="auto"
+                        width="140%"
+                        height="100%"
                         volume={0.5}
                         controls = {true}
                         config={{ file: {
                                 attributes: {
                                     controlsList: 'nodownload nofullscreen noremoteplayback'
                                 }}}}
+                        style={{objectFit: "cover"}}
                     />
                 </Col>
                 <Col span={12} offset={4}>
