@@ -35,7 +35,7 @@ export default function CoachingContentMD() {
                         <h4 className="h4-card" style={{color: "white"}}>
                             Equip yourself with the essentials for success in competition.
                         </h4>
-                        <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
+                        <p className="p-card" style={{color: "white", paddingTop: "10px"}}>
                             <b>Features include:</b>
                             <ul className="ul-custom">
                                 <li>1-hour sessions of private coaching (minimum 4 hours)</li>
@@ -71,7 +71,7 @@ export default function CoachingContentMD() {
                             For debaters wanting to go to the next level by debaters who have been there.
                             Designed to achieve your greatest competitive ambitions.
                         </h4>
-                        <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
+                        <p className="p-card" style={{color: "white", paddingTop: "10px"}}>
                             <b>Features include:</b>
                             <ul className="ul-custom">
                                 <li>1-hour sessions of private coaching (minimum 4 hours)</li>
@@ -111,7 +111,7 @@ export default function CoachingContentMD() {
                             Hone in on the critical areas of improvement. Our skills kits offer a plethora of
                             custom-tailored packages aimed at what you need.
                         </h4>
-                        <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
+                        <p className="p-card" style={{color: "white", paddingTop: "10px"}}>
                             <b>Kits include:</b>
                             <ul className="ul-custom">
                                 <li>Case writing kit</li>

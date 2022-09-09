@@ -41,7 +41,7 @@ export default function CoachingContentXXL() {
                     </h2>
                 </Col>
             </Row>
-            <Row style={{paddingTop: "100px"}}>
+            <Row style={{paddingTop: "50px"}}>
                 <Col span={6} offset={2}>
                     <Card
                         title={<h3 className="h3-card">Starter Kit ($37.50/hr)</h3>}
@@ -163,10 +163,10 @@ export default function CoachingContentXXL() {
                         style={{background: "#FFFFFF", borderColor: "black", height: heightSkillsCard, borderRadius: "20px",
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
-                        <p className="p-content3">
+                        <p className="p-card">
                             The Case Writing Kit will teach you everything about how to perfect case writing.
                         </p>
-                        <p className="p-content3">
+                        <p className="p-card">
                             You will learn the fundamentals of strategic case writing, including: Argument selection,
                             narrative, preemption, baiting opponents with shiny objects, forced concessions,
                             clash minimizing and maximizing strategies, best paraphrasing practices, evidence flow,
@@ -190,10 +190,10 @@ export default function CoachingContentXXL() {
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                         ref={refSkillsCard}
                     >
-                        <p className="p-content3">
+                        <p className="p-card">
                             The First Speaker Kit will teach you everything about how to be the strongest 1st speaker.
                         </p>
-                        <p className="p-content3">
+                        <p className="p-card">
                             You will learn how to make better use of intangibles to win rounds, such as speed, intonation,
                             and credibility as the round unfolds. In addition, the First Speaker Kit will help you
                             learn how to use flex-cases, how to use cross fires as a springboard to win rounds,
@@ -216,10 +216,10 @@ export default function CoachingContentXXL() {
                         style={{background: "#FFFFFF", borderColor: "black", height: heightSkillsCard, borderRadius: "20px",
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
-                        <p className="p-content3">
+                        <p className="p-card">
                             The Second Speaker Kit will teach you everything about how to be the strongest 2nd speaker.
                         </p>
-                        <p className="p-content3">
+                        <p className="p-card">
                             You will learn how to prepare and deliver comprehensive blocks, how to generate effective
                             overviews that don’t waste time, how and when to prioritize logic over evidence,
                             how to balance offense and defense, how to isolate and refute evidence, how to respond
@@ -244,10 +244,10 @@ export default function CoachingContentXXL() {
                         style={{background: "#FFFFFF", borderColor: "black", height: heightSkillsCard, borderRadius: "20px",
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
-                        <p className="p-content3">
+                        <p className="p-card">
                             The Crossfire Kit will teach you everything about how to master crossfire.
                         </p>
-                        <p className="p-content3">
+                        <p className="p-card">
                             You will learn why crossfire is the most important “speech,” how to use BDA’s one-of-a-kind
                             14 question toolkit, how to use content from crossfire in subsequent speeches, how to
                             properly ask evidence questions, how to get opponents to walk into traps, how to appear
@@ -269,10 +269,10 @@ export default function CoachingContentXXL() {
                         style={{background: "#FFFFFF", borderColor: "black", height: heightSkillsCard, borderRadius: "20px",
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
-                        <p className="p-content3">
+                        <p className="p-card">
                             The Weighing Kit will teach you everything about how to weigh effectively in a debate round.
                         </p>
-                        <p className="p-content3">
+                        <p className="p-card">
                             You will learn which weighing mechanisms actually matter, how to use weighing mechanisms
                             efficiently and effectively, how to utilize comparative language to embed weighing,
                             how to operationalize overviews, middleviews, and underviews as weighing tools,
@@ -294,10 +294,10 @@ export default function CoachingContentXXL() {
                         style={{background: "#FFFFFF", borderColor: "black", height: heightSkillsCard, borderRadius: "20px",
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
-                        <p className="p-content3">
+                        <p className="p-card">
                             The Progressive Kit will teach you everything about how to debate progressive arguments.
                         </p>
-                        <p className="p-content3">
+                        <p className="p-card">
                             You will learn the ins and outs of progressive arguments, such as paraphrasing theory,
                             Capitalism Kritiks, and Fem Frameworks. In addition, you will learn the proper structure
                             to present such arguments, the best standards and voters to use, and how to effectively
