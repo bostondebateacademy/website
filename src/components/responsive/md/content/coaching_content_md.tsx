@@ -33,9 +33,7 @@ export default function CoachingContentMD() {
                         style={{background: "#2b2d42", height: "auto", borderRadius: "20px", overflow: "hidden", position: "relative"}}
                     >
                         <h4 className="h4-card" style={{color: "white"}}>
-                            Equip yourself with the barebones tools needed to find success in competition.
-                            Designed to give you everything you need to improve.
-
+                            Equip yourself with the essentials for success in competition.
                         </h4>
                         <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
                             <b>Features include:</b>
@@ -328,11 +326,11 @@ export default function CoachingContentMD() {
                             The Progressive Kit will teach you everything about how to debate progressive arguments.
                         </p>
                         <p className="p-card">
-                            Finally, you will learn the ins and outs of progressive arguments, such as paraphrasing theory,
-                            Capitalism Kritiks, and Fem Frameworks. You will learn the proper structure to present
-                            such arguments, the best standards and voters to use, and how to effectively warrant
-                            your standards and voters. Finally, you learn how to easily respond to any progressive
-                            argument  and return to substance ASAP in your round.
+                            You will learn the ins and outs of progressive arguments, such as paraphrasing theory,
+                            Capitalism Kritiks, and Fem Frameworks. In addition, you will learn the proper structure
+                            to present such arguments, the best standards and voters to use, and how to effectively
+                            warrant your standards and voters. Finally, you will learn how to easily respond to any
+                            progressive argument  and return to substance ASAP in your round.
                         </p>
                     </Card>
                 </Col>
