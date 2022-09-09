@@ -30,13 +30,11 @@ export default function HomeContentXXL() {
             <Row style={{paddingBottom: "150px"}}>
                 <Col
                     xxl={{span: 8, offset: 3}}
-                    xl={{span: 10, offset: 1}}
                 >
                     <Carousel1Text />
                 </Col>
                 <Col
                     xxl={{span: 9, offset: 1}}
-                    xl={{span: 11, offset: 1}}
                 >
                     <Carousel dots={true}
                               dotPosition="bottom"
@@ -57,7 +55,6 @@ export default function HomeContentXXL() {
             <Row style={{paddingBottom: "200px"}}>
                 <Col
                     xxl={{span: 18, offset: 3}}
-                    xl={{span: 22, offset: 1}}
                 >
                     <img src={img_awards} className="img-centered" style={{width: "70%"}} alt=""/>
                 </Col>
@@ -65,8 +62,7 @@ export default function HomeContentXXL() {
 
             <Row style={{paddingTop: "100px", paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    xxl={{span: 8, offset: 3}}
-                    xl={{span: 10, offset: 1}}
+                    xxl={{span: 6, offset: 3}}
                 >
                     <h1 className="h1-content" style={{paddingTop: "30px"}}>
                         The best team for the best students.
@@ -84,11 +80,10 @@ export default function HomeContentXXL() {
                     </p>
                 </Col>
                 <Col
-                    xxl={{span: 4, offset: 1}}
-                    xl={{span: 5, offset: 1}}
+                    xxl={{span: 5, offset: 1}}
                 >
                     <ReactCardFlip isFlipped={flippedBen} flipDirection="horizontal">
-                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", height: "560px", objectFit: "cover", cursor: "pointer"}} alt=""/>
+                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", height: "700px", objectFit: "cover", cursor: "pointer"}} alt=""/>
                         <Card
                             title={<h3 className="h3-content">Ben Carson</h3>}
                             // eslint-disable-next-line
@@ -100,11 +95,10 @@ export default function HomeContentXXL() {
                     </ReactCardFlip>
                 </Col>
                 <Col
-                    xxl={{span: 4, offset: 1}}
-                    xl={{span: 5, offset: 1}}
+                    xxl={{span: 5, offset: 1}}
                 >
                     <ReactCardFlip isFlipped={flippedMax} flipDirection="horizontal">
-                        <img src={image_max} onClick={FlipMax} style={{width: "100%", height: "560px", objectFit: "cover", cursor: "pointer"}} alt=""/>
+                        <img src={image_max} onClick={FlipMax} style={{width: "100%", height: "700px", objectFit: "cover", cursor: "pointer"}} alt=""/>
                         <Card
                             title={<h3 className="h3-content">Max Albert</h3>}
                             // eslint-disable-next-line
@@ -121,7 +115,6 @@ export default function HomeContentXXL() {
             <Row style={{paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
                     xxl={{span: 18, offset: 3}}
-                    xl={{span: 22, offset: 1}}
                 >
                     <h1 className="h1-content">
                         Student tested, Student approved.
@@ -148,19 +141,11 @@ export default function HomeContentXXL() {
             <Row style={{paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
                     xxl={{span: 18, offset: 3}}
-                    xl={{span: 22, offset: 1}}
                 >
                     <Row>
                         <h1 className="h1-centered">
                             10 years of proven results.
                         </h1>
-                    </Row>
-                    <Row style={{marginTop: "-30px"}}>
-                        <Col span={24}>
-                            <h2 className="h2-centered">
-                                Our achievements speak for themselves
-                            </h2>
-                        </Col>
                     </Row>
                     <Row>
                         <img src={image1} className="img-centered" style={{width: "70%"}} alt=""/>
@@ -195,8 +180,8 @@ export function Carousel2Content1() {
                         Meet Sam, <b>winner of the 2022 Silver Tournament of Champions.</b>
                     </p>
                     <p className="p-carousel-2">
-                        Through our coaching and curriculum, countless students have unlocked their true potential.
-                        Boston Debate Academy offers your child a life-changing opportunity.
+                        Through our coaching and curriculum, countless students have unlocked their true potential,
+                        winning some of the most prestigious debate tournaments around the country against teams around the world.
                     </p>
                     <p className="p-carousel-2">
                         Boston Debate Academy offers your child a life-changing opportunity.

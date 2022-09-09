@@ -170,7 +170,7 @@ p {
 @media only screen and (min-width: 768px) {
     .h1-carousel {
         color: #FFD151;
-        text-align: center;
+        text-align: left;
         font-size: 40pt;
     }
 
@@ -199,6 +199,14 @@ p {
         font-size: 32pt;
     }
 
+    .h2-content {
+        padding-bottom: 20px;
+        text-align: left;
+        color: black;
+        width: 100%;
+        font-size: 32pt;
+    }
+
     .h3-content {
         text-align: left;
         color: black;
@@ -218,7 +226,7 @@ p {
     .h4-card {
         text-align: left;
         width: 100%;
-        font-size: 20pt;
+        font-size: 16pt;
     }
 
     .p-carousel {
@@ -259,7 +267,14 @@ p {
     .p-card {
         white-space: pre-line;
         text-align: left;
-        font-size: 20pt;
+        font-size: 16pt;
+        color: black;
+    }
+
+    .p-bio {
+        white-space: pre-line;
+        text-align: left;
+        font-size: 16pt;
         color: black;
     }
 }
@@ -267,7 +282,7 @@ p {
 @media only screen and (max-width: 768px) {
     .h1-carousel {
         color: #FFD151;
-        text-align: center;
+        text-align: left;
         font-size: 32pt;
     }
 
@@ -291,6 +306,14 @@ p {
     .h2-centered {
         padding-bottom: 20px;
         text-align: center;
+        color: black;
+        width: 100%;
+        font-size: 24pt;
+    }
+
+    .h2-content {
+        padding-bottom: 20px;
+        text-align: left;
         color: black;
         width: 100%;
         font-size: 24pt;
@@ -354,6 +377,13 @@ p {
     }
 
     .p-card {
+        white-space: pre-line;
+        text-align: left;
+        font-size: 14pt;
+        color: black;
+    }
+
+    .p-bio {
         white-space: pre-line;
         text-align: left;
         font-size: 14pt;

@@ -1,6 +1,5 @@
-import type {RadioChangeEvent, BadgeProps} from 'antd';
-import {Col, Row, Button, Radio, Badge, Calendar} from "antd";
-import type { Moment } from 'moment';
+import type {RadioChangeEvent} from 'antd';
+import {Col, Row, Button, Radio, Collapse} from "antd";
 import React, {useState} from "react";
 import image1 from "../../../../images/classes1.png";
 import {Link} from "react-router-dom";
@@ -14,75 +13,11 @@ export default function ClassesContentLG() {
         setSlide(parseInt(value));
     };
 
+    const {Panel} = Collapse;
 
-    const getListData = (value: Moment) => {
-        let listData;
-        switch (value.date()) {
-            case 8:
-                listData = [
-                    { type: 'warning', content: 'Only 5 slots left' },
-                    { type: 'success', content: 'Class is available' },
-                ];
-                break;
-            case 9:
-                listData = [
-                    { type: 'success', content: 'All slots free' },
-                ];
-                break;
-            case 10:
-                listData = [
-                    { type: 'warning', content: 'Only 5 slots left' },
-                    { type: 'success', content: 'Class is available' },
-                    { type: 'error', content: 'Class is full' },
-                ];
-                break;
-            case 15:
-                listData = [
-                    { type: 'warning', content: 'Only 5 slots left' },
-                    { type: 'success', content: 'Class is available' },
-                    { type: 'error', content: 'Class is full' },
-                    { type: 'error', content: 'Class is full' },
-                    { type: 'error', content: 'Class is full' },
-                    { type: 'error', content: 'Class is full' },
-                ];
-                break;
-            default:
-        }
-        return listData || [];
-    };
-
-    const getMonthData = (value: Moment) => {
-        if (value.month() === 8) {
-            return 1394;
-        }
-    };
-
-    const CalFunc: React.FC = () => {
-        const monthCellRender = (value: Moment) => {
-            const num = getMonthData(value);
-            return num ? (
-                <div className="notes-month">
-                    <section>{num}</section>
-                    <span>Backlog number</span>
-                </div>
-            ) : null;
-        };
-
-        const dateCellRender = (value: Moment) => {
-            const listData = getListData(value);
-            return (
-                <ul className="events">
-                    {listData.map(item => (
-                        <li key={item.content}>
-                            <Badge status={item.type as BadgeProps['status']} text={item.content} />
-                        </li>
-                    ))}
-                </ul>
-            );
-        };
-
-        return <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />;
-    };
+    const onChange = (key: string | string[]) => {
+        console.log(key);
+    }
 
     return (
         <div>
@@ -93,18 +28,18 @@ export default function ClassesContentLG() {
                     sm={{span: 22, offset: 1}}
                     xs={{span: 22, offset: 1}}
                 >
-                    <h1 className="h1-carousel" style={{color: "white", paddingTop: "100px", paddingBottom: "50px"}}>
+                    <h1 className="h1-carousel" style={{color: "white", paddingTop: "100px", paddingBottom: "50px", textAlign: "center"}}>
                         Join the most prestigous debate academy in North America.
                     </h1>
                     <Button
                         type="primary" block
-                        onClick={event =>  window.open('https://wd84sdlr.paperform.co/', "_blank")}
+                        onClick={event =>  window.open('https://snssyjgc.paperform.co', "_blank")}
                         style={{width: "50%", minWidth: "150px", marginLeft: "25%", fontSize: "16pt"}}
                     >
                         Join Us!
                     </Button>
                     <p className="p-content2" style={{color: "white", paddingTop: "30px"}}>
-                        Classes start october 10th.
+                        Classes start October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "center", marginTop: "-20px"}}>
                         (want a try-out first? Click "join us" and let us know!)
@@ -190,14 +125,70 @@ export default function ClassesContentLG() {
                     </Row>
                 </Col>
             </Row>
-            <Row style={{background: "#F2F2F2", paddingBottom: "100px"}}>
+            <Row style={{background: "#F2F2F2", paddingTop: "50px", paddingBottom: "100px"}}>
                 <Col
                     lg={{span: 20, offset: 2}}
                     md={{span: 20, offset: 2}}
                     sm={{span: 22, offset: 1}}
                     xs={{span: 22, offset: 1}}
                 >
-                    <CalFunc />
+                    <h2 className="h3-content" style={{textAlign: "center"}}>
+                        2022 Fall Schedule
+                    </h2>
+                    <Collapse defaultActiveKey={['1']} onChange={onChange} style={{fontSize: "14pt"}}>
+                        <Panel header="MS Intro" key="1">
+                            <p>
+                                <b>Mondays: </b>4:00 - 5:30 PM <br/>
+                                <b>Tuesdays: </b>4:00 - 5:30 PM <br/>
+                                <b>Saturdays: </b>11:00 - 12:30 PM <br/>
+                                <b>Sundays: </b>11:00 - 12:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="MS Novice" key="2">
+                            <p>
+                                <span style={{color: "red"}}>
+                                    <b>Mondays: </b>4:00 - 5:30 PM (unavailable)
+                                </span> <br/>
+                                <b>Thursdays: </b>4:00 - 5:30 PM <br/>
+                                <b>Saturdays: </b>3:00 - 4:30 PM <br/>
+                                <b>Sundays: </b>3:00 - 4:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="MS Junior Varsity" key="3">
+                            <p>
+                                <b>Thursdays: </b>6:00 - 7:30 PM <br/>
+                                <b>Fridays: </b>4:00 - 5:30 PM <br/>
+                                <span style={{color: "red"}}>
+                                    <b>Sundays: </b>1:00 - 2:30 PM (unavailable)
+                                </span> <br/>
+                                <b>Sundays: </b>3:00 - 4:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="MS Varsity" key="4">
+                            <p>
+                                <b>Mondays: </b>6:00 - 7:30 PM <br/>
+                                <span style={{color: "red"}}>
+                                    <b>Wednesdays: </b>4:00 - 5:30 PM (unavailable)
+                                </span> <br/>
+                                <b>Wednesdays: </b>6:00 - 7:30 PM <br/>
+                                <b>Fridays: </b>6:00 - 7:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="HS Intro" key="5">
+                            <p>
+                                <b>Tuesdays: </b>6:00 - 7:30 PM <br/>
+                                <b>Saturdays: </b>1:00 - 2:30 PM<br/>
+                                <b>Sundays: </b>1:00 - 2:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="HS Varsity" key="6">
+                            <p>
+                                <b>Mondays: </b>6:00 - 7:30 PM <br/>
+                                <b>Wednesdays: </b>4:00 - 5:30 PM<br/>
+                                <b>Fridays: </b>6:00 - 7:30 PM <br/>
+                            </p>
+                        </Panel>
+                    </Collapse>
                 </Col>
             </Row>
         </div>

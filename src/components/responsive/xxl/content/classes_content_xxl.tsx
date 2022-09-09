@@ -1,6 +1,5 @@
-import type {RadioChangeEvent, BadgeProps} from 'antd';
-import {Col, Row, Button, Radio, Badge, Calendar} from "antd";
-import type { Moment } from 'moment';
+import type {RadioChangeEvent} from 'antd';
+import {Col, Row, Button, Radio, Collapse, Divider} from "antd";
 import React, {useState} from "react";
 import image1 from "../../../../images/classes1.png";
 import {Link} from "react-router-dom";
@@ -14,75 +13,11 @@ export default function ClassesContentXXL() {
         setSlide(parseInt(value));
     };
 
+    const {Panel} = Collapse;
 
-    const getListData = (value: Moment) => {
-        let listData;
-        switch (value.date()) {
-            case 8:
-                listData = [
-                    { type: 'warning', content: 'Only 5 slots left' },
-                    { type: 'success', content: 'Class is available' },
-                ];
-                break;
-            case 9:
-                listData = [
-                    { type: 'success', content: 'All slots free' },
-                ];
-                break;
-            case 10:
-                listData = [
-                    { type: 'warning', content: 'Only 5 slots left' },
-                    { type: 'success', content: 'Class is available' },
-                    { type: 'error', content: 'Class is full' },
-                ];
-                break;
-            case 15:
-                listData = [
-                    { type: 'warning', content: 'Only 5 slots left' },
-                    { type: 'success', content: 'Class is available' },
-                    { type: 'error', content: 'Class is full' },
-                    { type: 'error', content: 'Class is full' },
-                    { type: 'error', content: 'Class is full' },
-                    { type: 'error', content: 'Class is full' },
-                ];
-                break;
-            default:
-        }
-        return listData || [];
-    };
-
-    const getMonthData = (value: Moment) => {
-        if (value.month() === 8) {
-            return 1394;
-        }
-    };
-
-    const CalFunc: React.FC = () => {
-        const monthCellRender = (value: Moment) => {
-            const num = getMonthData(value);
-            return num ? (
-                <div className="notes-month">
-                    <section>{num}</section>
-                    <span>Backlog number</span>
-                </div>
-            ) : null;
-        };
-
-        const dateCellRender = (value: Moment) => {
-            const listData = getListData(value);
-            return (
-                <ul className="events">
-                    {listData.map(item => (
-                        <li key={item.content}>
-                            <Badge status={item.type as BadgeProps['status']} text={item.content} />
-                        </li>
-                    ))}
-                </ul>
-            );
-        };
-
-        return <Calendar dateCellRender={dateCellRender} monthCellRender={monthCellRender} />;
-    };
+    const onChange = (key: string | string[]) => {
+        console.log(key);
+    }
 
     return (
         <div>
@@ -90,33 +25,25 @@ export default function ClassesContentXXL() {
                 <Col
                      xxl={{span: 12, offset: 0}}
                      xl={{span: 12, offset: 0}}
-                     lg={{span: 12, offset: 0}}
-                     md={{span: 12, offset: 0}}
-                     sm={{span: 12, offset: 0}}
-                     xs={{span: 12, offset: 0}}
                 >
-                    <img src={image1} style={{width: "100%", height: "800px", objectFit: "cover"}} alt=""/>
+                    <img src={image1} style={{width: "100%", height: "1000px", objectFit: "cover"}} alt=""/>
                 </Col>
                 <Col
                     xxl={{span: 8, offset: 2}}
                     xl={{span: 8, offset: 2}}
-                    lg={{span: 8, offset: 2}}
-                    md={{span: 8, offset: 2}}
-                    sm={{span: 8, offset: 2}}
-                    xs={{span: 8, offset: 2}}
                 >
-                    <h1 className="h1-carousel" style={{color: "white", paddingTop: "150px", paddingBottom: "50px"}}>
+                    <h1 className="h1-carousel" style={{color: "white", paddingTop: "250px", paddingBottom: "50px", textAlign: "center"}}>
                         Join the most prestigous debate academy in North America.
                     </h1>
                     <Button
                         type="primary" block
-                        onClick={event =>  window.open('https://wd84sdlr.paperform.co/', "_blank")}
+                        onClick={event =>  window.open('https://snssyjgc.paperform.co', "_blank")}
                         style={{width: "50%", minWidth: "150px", marginLeft: "25%", fontSize: "16pt"}}
                     >
                         Join Us!
                     </Button>
                     <p className="p-content2" style={{color: "white", paddingTop: "30px"}}>
-                        Classes start october 10th.
+                        Classes start October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "center", marginTop: "-20px"}}>
                         (want a try-out first? Click "join us" and let us know!)
@@ -127,78 +54,126 @@ export default function ClassesContentXXL() {
                 <Col
                     xxl={{span: 18, offset: 3}}
                     xl={{span: 18, offset: 3}}
-                    lg={{span: 18, offset: 3}}
-                    md={{span: 18, offset: 3}}
-                    sm={{span: 18, offset: 3}}
-                    xs={{span: 18, offset: 3}}
                 >
-                    <Row>
-                            <h1 className="h1-centered">
-                                Class Information
-                            </h1>
-                            <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                                We offer 4 levels for Middle School (MS) and 2 levels for High School (HS).
-                            </h2>
-                    </Row>
-                    <Row>
-                        <Radio.Group onChange={handleSlideChange} value={slide.toString()} style={{ marginBottom: 8 }}>
-                            <Radio.Button value="0" style={{marginRight: "10px"}}>
-                                MS: Intro
-                            </Radio.Button>
-                            <Radio.Button value="1" style={{marginRight: "10px"}}>
-                                MS: Novice
-                            </Radio.Button>
-                            <Radio.Button value="2" style={{marginRight: "10px"}}>
-                                MS: Junior Varsity
-                            </Radio.Button>
-                            <Radio.Button value="3" style={{marginRight: "10px"}}>
-                                MS: Varsity
-                            </Radio.Button>
-                            <Radio.Button value="4" style={{marginRight: "10px"}}>
-                                HS: Intro
-                            </Radio.Button>
-                            <Radio.Button value="5" style={{marginRight: "10px"}}>
-                                HS: Varsity
-                            </Radio.Button>
-                        </Radio.Group>
-                            <p style={{fontSize: "14pt"}}>
-                                <Link to={{pathname: "/why-bda", hash: "#program"}}> Why BDA classes over others?</Link>
-                            </p>
-                    </Row>
-                    <Row>
-                        <Col
-                            xxl={{span: 11}}
-                            xl={{span: 18}}
-                            lg={{span: 22}}
-                            md={{span: 24}}
-                            sm={{span: 24}}
-                            xs={{span: 24}}
-                        >
-                            {slide === 0 && <div>
-                                <CarouselContent1 />
-                            </div>}
-                            {slide === 1 && <div>
-                                <CarouselContent2 />
-                            </div>}
-                            {slide === 2 && <div>
-                                <CarouselContent3 />
-                            </div>}
-                            {slide === 3 && <div>
-                                <CarouselContent4 />
-                            </div>}
-                            {slide === 4 && <div>
-                                <CarouselContent5 />
-                            </div>}
-                            {slide === 5 && <div>
-                                <CarouselContent6 />
-                            </div>}
-                        </Col>
-                    </Row>
+                    <h1 className="h1-centered">
+                        Class Information
+                    </h1>
+                    <h2 className="h2-centered" style={{marginTop: "-50px"}}>
+                        We offer 4 levels for Middle School (MS) and 2 levels for High School (HS).
+                    </h2>
                 </Col>
             </Row>
-            <Row style={{background: "#F2F2F2", paddingBottom: "100px"}}>
-                <Col span={18} offset={3}>
-                    <CalFunc />
+            <Row style={{background: "#F2F2F2"}}>
+                <Col
+                    xxl={{span: 11, offset: 3}}
+                    xl={{span: 13, offset: 1}}
+                >
+                    <Radio.Group onChange={handleSlideChange} value={slide.toString()} style={{ marginBottom: 8 }}>
+                        <Radio.Button value="0" style={{marginRight: "10px"}}>
+                            MS: Intro
+                        </Radio.Button>
+                        <Radio.Button value="1" style={{marginRight: "10px"}}>
+                            MS: Novice
+                        </Radio.Button>
+                        <Radio.Button value="2" style={{marginRight: "10px"}}>
+                            MS: Junior Varsity
+                        </Radio.Button>
+                        <Radio.Button value="3" style={{marginRight: "10px"}}>
+                            MS: Varsity
+                        </Radio.Button>
+                        <Radio.Button value="4" style={{marginRight: "10px"}}>
+                            HS: Intro
+                        </Radio.Button>
+                        <Radio.Button value="5" style={{marginRight: "10px"}}>
+                            HS: Varsity
+                        </Radio.Button>
+                    </Radio.Group>
+                    <p style={{ display: "inline", fontSize: "14pt"}}>
+                        <Link to={{pathname: "/why-bda", hash: "#program"}}> Why BDA classes over others?</Link>
+                    </p>
+                    {slide === 0 && <div>
+                        <CarouselContent1 />
+                    </div>}
+                    {slide === 1 && <div>
+                        <CarouselContent2 />
+                    </div>}
+                    {slide === 2 && <div>
+                        <CarouselContent3 />
+                    </div>}
+                    {slide === 3 && <div>
+                        <CarouselContent4 />
+                    </div>}
+                    {slide === 4 && <div>
+                        <CarouselContent5 />
+                    </div>}
+                    {slide === 5 && <div>
+                        <CarouselContent6 />
+                    </div>}
+                </Col>
+                <Col span={1} offset={1}>
+                    <Divider type="vertical" dashed={true} style={{height: "100%", borderColor: "#2b2d42"}}/>
+                </Col>
+                <Col
+                    xxl={{span: 5, offset: 0}}
+                    xl={{span: 7, offset: 0}}
+                >
+                    <h2 className="h3-content" style={{textAlign: "center"}}>
+                        2022 Fall Schedule
+                    </h2>
+                    <Collapse defaultActiveKey={['1']} onChange={onChange} style={{fontSize: "14pt"}}>
+                        <Panel header="MS Intro" key="1">
+                            <p>
+                                <b>Mondays: </b>4:00 - 5:30 PM <br/>
+                                <b>Tuesdays: </b>4:00 - 5:30 PM <br/>
+                                <b>Saturdays: </b>11:00 - 12:30 PM <br/>
+                                <b>Sundays: </b>11:00 - 12:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="MS Novice" key="2">
+                            <p>
+                                <span style={{color: "red"}}>
+                                    <b>Mondays: </b>4:00 - 5:30 PM (unavailable)
+                                </span> <br/>
+                                <b>Thursdays: </b>4:00 - 5:30 PM <br/>
+                                <b>Saturdays: </b>3:00 - 4:30 PM <br/>
+                                <b>Sundays: </b>3:00 - 4:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="MS Junior Varsity" key="3">
+                            <p>
+                                <b>Thursdays: </b>6:00 - 7:30 PM <br/>
+                                <b>Fridays: </b>4:00 - 5:30 PM <br/>
+                                <span style={{color: "red"}}>
+                                    <b>Sundays: </b>1:00 - 2:30 PM (unavailable)
+                                </span> <br/>
+                                <b>Sundays: </b>3:00 - 4:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="MS Varsity" key="4">
+                            <p>
+                                <b>Mondays: </b>6:00 - 7:30 PM <br/>
+                                <span style={{color: "red"}}>
+                                    <b>Wednesdays: </b>4:00 - 5:30 PM (unavailable)
+                                </span> <br/>
+                                <b>Wednesdays: </b>6:00 - 7:30 PM <br/>
+                                <b>Fridays: </b>6:00 - 7:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="HS Intro" key="5">
+                            <p>
+                                <b>Tuesdays: </b>6:00 - 7:30 PM <br/>
+                                <b>Saturdays: </b>1:00 - 2:30 PM<br/>
+                                <b>Sundays: </b>1:00 - 2:30 PM <br/>
+                            </p>
+                        </Panel>
+                        <Panel header="HS Varsity" key="6">
+                            <p>
+                                <b>Mondays: </b>6:00 - 7:30 PM <br/>
+                                <b>Wednesdays: </b>4:00 - 5:30 PM<br/>
+                                <b>Fridays: </b>6:00 - 7:30 PM <br/>
+                            </p>
+                        </Panel>
+                    </Collapse>
                 </Col>
             </Row>
         </div>

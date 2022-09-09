@@ -150,13 +150,6 @@ export default function HomeContentMD() {
                         </h1>
                     </Row>
                     <Row>
-                        <Col span={24}>
-                            <p className="p-content2">
-                                Our achievements speak for themselves
-                            </p>
-                        </Col>
-                    </Row>
-                    <Row>
                         <img src={image1} className="img-centered" style={{width: "100%"}} alt=""/>
                     </Row>
                 </Col>
@@ -192,8 +185,8 @@ export function Carousel2Content1() {
             <Row style={{paddingTop: "50px"}}>
                 <Col span={24}>
                     <p className="p-carousel-2">
-                        Through our coaching and curriculum, countless students have unlocked their true potential.
-                        Boston Debate Academy offers your child a life-changing opportunity.
+                        Through our coaching and curriculum, countless students have unlocked their true potential,
+                        winning some of the most prestigious debate tournaments around the country against teams around the world.
                     </p>
                     <p className="p-carousel-2">
                         Boston Debate Academy offers your child a life-changing opportunity.

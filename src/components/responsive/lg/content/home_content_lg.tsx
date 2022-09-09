@@ -59,49 +59,14 @@ export default function HomeContentLG() {
                     <img src={img_awards} className="img-centered" style={{width: "70%"}} alt=""/>
                 </Col>
             </Row>
+
             <Row style={{paddingTop: "100px", background: "#F2F2F2"}}>
                 <Col
-                    lg={{span: 10, offset: 1}}
+                    lg={{span: 22, offset: 1}}
                 >
                     <h1 className="h1-content" style={{paddingTop: "30px"}}>
                         The best team for the best students.
                     </h1>
-                </Col>
-                <Col
-                    lg={{span: 5, offset: 1}}
-                >
-                    <ReactCardFlip isFlipped={flippedBen} flipDirection="horizontal">
-                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", cursor: "pointer"}} alt=""/>
-                        <Card
-                            title={<h3 className="h3-content">Ben Carson</h3>}
-                            // eslint-disable-next-line
-                            extra={<a onClick={FlipBen}><ArrowLeftOutlined/> back</a>}
-                            style={{background: "#F2F2F2", borderColor: "black", height: "auto"}}
-                        >
-                            <BioBen />
-                        </Card>
-                    </ReactCardFlip>
-                </Col>
-                <Col
-                    lg={{span: 5, offset: 1}}
-                >
-                    <ReactCardFlip isFlipped={flippedMax} flipDirection="horizontal">
-                        <img src={image_max} onClick={FlipMax} style={{width: "100%", cursor: "pointer"}} alt=""/>
-                        <Card
-                            title={<h3 className="h3-content">Max Albert</h3>}
-                            // eslint-disable-next-line
-                            extra={<a onClick={FlipMax}><ArrowLeftOutlined/> back</a>}
-                            style={{background: "#F2F2F2", borderColor: "black", height: "auto"}}
-                        >
-                            <BioMax />
-                        </Card>
-                    </ReactCardFlip>
-                </Col>
-            </Row>
-            <Row style={{paddingTop: "50px", paddingBottom: "100px", background: "#F2F2F2"}}>
-                <Col
-                    lg={{span: 22, offset: 1}}
-                >
                     <p className="p-content3">
                         Only two coaches have ever won the Middle School Debate Trifecta.
                         Both teach at Boston Debate Academy.
@@ -113,6 +78,38 @@ export default function HomeContentLG() {
                     <p className="p-content3">
                         Click our coaches to learn more about them!
                     </p>
+                </Col>
+            </Row>
+            <Row style={{paddingTop: "50px", paddingBottom: "100px", background: "#F2F2F2"}}>
+                <Col
+                    lg={{span: 10, offset: 1}}
+                >
+                    <ReactCardFlip isFlipped={flippedBen} flipDirection="horizontal">
+                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", objectFit: "cover", cursor: "pointer"}} alt=""/>
+                        <Card
+                            title={<h3 className="h3-content">Ben Carson</h3>}
+                            // eslint-disable-next-line
+                            extra={<a onClick={FlipBen}><ArrowLeftOutlined/> back</a>}
+                            style={{background: "#F2F2F2", borderColor: "black", height: "auto"}}
+                        >
+                            <BioBen />
+                        </Card>
+                    </ReactCardFlip>
+                </Col>
+                <Col
+                    lg={{span: 10, offset: 2}}
+                >
+                    <ReactCardFlip isFlipped={flippedMax} flipDirection="horizontal">
+                        <img src={image_max} onClick={FlipMax} style={{width: "100%", objectFit: "cover", cursor: "pointer"}} alt=""/>
+                        <Card
+                            title={<h3 className="h3-content">Max Albert</h3>}
+                            // eslint-disable-next-line
+                            extra={<a onClick={FlipMax}><ArrowLeftOutlined/> back</a>}
+                            style={{background: "#F2F2F2", borderColor: "black", height: "auto"}}
+                        >
+                            <BioMax />
+                        </Card>
+                    </ReactCardFlip>
                 </Col>
                 <Divider style={{borderColor: "#2B2D42", borderWidth: 3, marginTop: "100px"}}/>
             </Row>
@@ -154,13 +151,6 @@ export default function HomeContentLG() {
                         </h1>
                     </Row>
                     <Row>
-                        <Col span={24}>
-                            <p className="p-content2">
-                                Our achievements speak for themselves
-                            </p>
-                        </Col>
-                    </Row>
-                    <Row>
                         <img src={image1} className="img-centered" style={{width: "70%"}} alt=""/>
                     </Row>
                 </Col>
@@ -197,8 +187,8 @@ export function Carousel2Content1() {
             <Row style={{paddingTop: "50px"}}>
                 <Col span={24}>
                     <p className="p-carousel-2">
-                        Through our coaching and curriculum, countless students have unlocked their true potential.
-                        Boston Debate Academy offers your child a life-changing opportunity.
+                        Through our coaching and curriculum, countless students have unlocked their true potential,
+                        winning some of the most prestigious debate tournaments around the country against teams around the world.
                     </p>
                     <p className="p-carousel-2">
                         Boston Debate Academy offers your child a life-changing opportunity.

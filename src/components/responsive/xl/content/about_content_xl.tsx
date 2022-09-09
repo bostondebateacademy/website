@@ -17,7 +17,7 @@ import {
 } from "../../../../icons/icons";
 
 
-export default function AboutContentMD() {
+export default function AboutContentXL() {
     const [height, setHeight] = useState(0)
     const ref = useRef<HTMLDivElement>(null)
 
@@ -31,7 +31,7 @@ export default function AboutContentMD() {
         <div style={{background: "#F2F2F2"}}>
             <Row style={{paddingTop: "100px", paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 20, offset: 2}}
                 >
                     <Row>
                         <h1 className="h1-centered">
@@ -43,7 +43,7 @@ export default function AboutContentMD() {
                     </Row>
                     <Row>
                         <Col
-                            md={{span: 16, offset: 4}}
+                            xl={{span: 14, offset: 5}}
                         >
                             <Carousel dots={false}
                                       dotPosition="bottom"
@@ -71,7 +71,7 @@ export default function AboutContentMD() {
             </Row>
             <Row id="program" style={{paddingTop: "100px", paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 20, offset: 2}}
                 >
                     <h1 className="h1-centered">
                         A better program for a better you.
@@ -83,7 +83,7 @@ export default function AboutContentMD() {
             </Row>
             <Row>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <h1 className="h1-content">
                         Experience
@@ -95,17 +95,20 @@ export default function AboutContentMD() {
                         hard-working staff, who understand not just how to debate, but how to <i>teach</i>.
                     </p>
                 </Col>
-            </Row>
-            <Row>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
-                    <img src={image4} style={{width: "100%"}} alt=""/>
+                    <img src={image4} style={{width: "100%", height: "430px", objectFit: "cover"}} alt=""/>
                 </Col>
             </Row>
             <Row style={{paddingTop: "100px"}}>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 9, offset: 2}}
+                >
+                    <img src={image5} style={{width: "100%", height: "430px", objectFit: "cover"}} alt=""/>
+                </Col>
+                <Col
+                    xl={{span: 9, offset: 2}}
                 >
                     <h1 className="h1-content">
                         Cost
@@ -118,16 +121,9 @@ export default function AboutContentMD() {
                     </p>
                 </Col>
             </Row>
-            <Row>
-                <Col
-                    md={{span: 20, offset: 2}}
-                >
-                    <img src={image5} style={{width: "100%"}} alt=""/>
-                </Col>
-            </Row>
             <Row style={{paddingTop: "100px"}}>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <h1 className="h1-content">
                         Curriculum
@@ -139,12 +135,10 @@ export default function AboutContentMD() {
                         student engagement, technology-integrated interaction, and group-oriented activities.
                     </p>
                 </Col>
-            </Row>
-            <Row>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
-                    <img src={image6} style={{width: "100%"}} alt=""/>
+                    <img src={image6} style={{width: "100%", height: "430px", objectFit: "cover"}} alt=""/>
                 </Col>
             </Row>
             <Row style={{paddingTop: "200px"}}>
@@ -152,7 +146,7 @@ export default function AboutContentMD() {
                     Thinkers Are The New Rock Stars.
                 </h1>
                 <Col
-                    md={{span: 20, offset: 2}}
+                    xl={{span: 20, offset: 2}}
                 >
                     <p className="p-content" style={{textAlign: "center", marginTop: "-50px"}}>
                         Today's economy and popular culture is driven by those who excel in academia.
@@ -162,7 +156,7 @@ export default function AboutContentMD() {
             </Row>
             <Row style={{paddingTop: "50px"}}>
                 <Col
-                    md={{span: 9, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <Card
                         title={
@@ -184,7 +178,7 @@ export default function AboutContentMD() {
                     </Card>
                 </Col>
                 <Col
-                    md={{span: 9, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <Card
                         title={
@@ -209,7 +203,7 @@ export default function AboutContentMD() {
             </Row>
             <Row style={{paddingTop: "50px"}}>
                 <Col
-                    md={{span: 9, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <Card
                         title={
@@ -231,7 +225,7 @@ export default function AboutContentMD() {
                     </Card>
                 </Col>
                 <Col
-                    md={{span: 9, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <Card
                         title={
@@ -255,7 +249,7 @@ export default function AboutContentMD() {
             </Row>
             <Row style={{paddingTop: "50px", paddingBottom: "100px"}}>
                 <Col
-                    md={{span: 9, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <Card
                         title={
@@ -277,7 +271,7 @@ export default function AboutContentMD() {
                     </Card>
                 </Col>
                 <Col
-                    md={{span: 9, offset: 2}}
+                    xl={{span: 9, offset: 2}}
                 >
                     <Card
                         title={
@@ -333,9 +327,10 @@ export function CarouselContent3() {
         <div>
             <Row>
                 <Col>
-                    <img src={image3} className="img-centered-carousel-carousel" alt=""/>
+                    <img src={image3} className="img-centered-carousel" alt=""/>
                 </Col>
             </Row>
         </div>
     )
 }
+

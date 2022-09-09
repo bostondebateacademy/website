@@ -1,8 +1,8 @@
 import React from "react";
 import {useMediaQuery} from "react-responsive";
 import AboutContentXXL from "../responsive/xxl/content/about_content_xxl";
+import AboutContentXL from "../responsive/xl/content/about_content_xl";
 import AboutContentLG from "../responsive/lg/content/about_content_lg";
-import AboutContentMD from "../responsive/md/content/about_content_md";
 import AboutContentSM from "../responsive/sm/content/about_content_sm";
 
 
@@ -21,9 +21,9 @@ export default function HomeContent() {
             {size_xxs && <AboutContentSM />}
             {size_xs && <AboutContentSM />}
             {size_sm && <AboutContentSM />}
-            {size_md && <AboutContentMD />}
+            {size_md && <AboutContentSM />}
             {size_lg && <AboutContentLG />}
-            {size_xl && <AboutContentXXL />}
+            {size_xl && <AboutContentXL />}
             {size_xxl && <AboutContentXXL />}
         </div>
     );

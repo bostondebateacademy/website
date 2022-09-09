@@ -50,7 +50,7 @@ export default function AboutContentSM() {
                             <Carousel dots={false}
                                       dotPosition="bottom"
                                       effect="scrollx"
-                                      autoplaySpeed={3000}
+                                      autoplaySpeed={5000}
                                       arrows={true}
                                       autoplay={true}
                                       nextArrow={<RightOutlined />}
@@ -263,8 +263,8 @@ export default function AboutContentSM() {
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
                         <p className="p-content3">
-                            The 21st century has brought everything closer together, making communication skills highly
-                            valuable in the world for former debaters, like Min Jin Lee and Celeste Ng.
+                            The 21st century has brought everyone closer together, making communication skills highly
+                            valuable in the world for former debaters, like authors Min Jin Lee and Celeste Ng.
                             At BDA, students learn the art of persuasive writing and speaking.
                         </p>
                     </Card>

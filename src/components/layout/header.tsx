@@ -119,7 +119,7 @@ function PageHeaderDrawer() {
                             </Menu.Item>
                             <Menu.Item>
                                 <a href="https://www.instagram.com/bostondebateacademy/" target="_blank" rel="noopener noreferrer">
-                                    <InstagramOutlined style={{fontSize: "20pt"}}/> Instragram
+                                    <InstagramOutlined style={{fontSize: "20pt"}}/> Instagram
                                 </a>
                             </Menu.Item>
                         </Menu>

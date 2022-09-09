@@ -52,7 +52,7 @@ export default function AboutContentXXL() {
                             <Carousel dots={false}
                                       dotPosition="bottom"
                                       effect="scrollx"
-                                      autoplaySpeed={3000}
+                                      autoplaySpeed={5000}
                                       arrows={true}
                                       autoplay={true}
                                       nextArrow={<RightOutlined />}
@@ -89,7 +89,7 @@ export default function AboutContentXXL() {
             </Row>
             <Row>
                 <Col
-                    xxl={{span: 6, offset: 5}}
+                    xxl={{span: 7, offset: 4}}
                     xl={{span: 9, offset: 2}}
                     lg={{span: 9, offset: 2}}
                 >
@@ -104,23 +104,23 @@ export default function AboutContentXXL() {
                     </p>
                 </Col>
                 <Col
-                    xxl={{span: 6, offset: 2}}
+                    xxl={{span: 7, offset: 2}}
                     xl={{span: 9, offset: 2}}
                     lg={{span: 9, offset: 2}}
                 >
-                    <img src={image4} style={{width: "100%", paddingTop: "10%"}} alt=""/>
+                    <img src={image4} style={{width: "100%", height: "430px", objectFit: "cover"}} alt=""/>
                 </Col>
             </Row>
             <Row style={{paddingTop: "100px"}}>
                 <Col
-                    xxl={{span: 6, offset: 5}}
+                    xxl={{span: 7, offset: 4}}
                     xl={{span: 9, offset: 2}}
                     lg={{span: 9, offset: 2}}
                 >
-                    <img src={image5} style={{width: "100%", paddingTop: "12%"}} alt=""/>
+                    <img src={image5} style={{width: "100%", height: "430px", objectFit: "cover"}} alt=""/>
                 </Col>
                 <Col
-                    xxl={{span: 6, offset: 2}}
+                    xxl={{span: 7, offset: 2}}
                     xl={{span: 9, offset: 2}}
                     lg={{span: 9, offset: 2}}
                 >
@@ -137,7 +137,7 @@ export default function AboutContentXXL() {
             </Row>
             <Row style={{paddingTop: "100px"}}>
                 <Col
-                    xxl={{span: 6, offset: 5}}
+                    xxl={{span: 7, offset: 4}}
                     xl={{span: 9, offset: 2}}
                     lg={{span: 9, offset: 2}}
                 >
@@ -152,11 +152,11 @@ export default function AboutContentXXL() {
                     </p>
                 </Col>
                 <Col
-                    xxl={{span: 6, offset: 2}}
+                    xxl={{span: 7, offset: 2}}
                     xl={{span: 9, offset: 2}}
                     lg={{span: 9, offset: 2}}
                 >
-                    <img src={image6} style={{width: "100%", paddingTop: "12%"}} alt=""/>
+                    <img src={image6} style={{width: "100%", height: "430px", objectFit: "cover"}} alt=""/>
                 </Col>
             </Row>
             <Row style={{paddingTop: "200px"}}>
@@ -176,7 +176,7 @@ export default function AboutContentXXL() {
             </Row>
             <Row style={{paddingTop: "50px"}}>
                 <Col
-                    xxl={{span: 4, offset: 5}}
+                    xxl={{span: 6, offset: 2}}
                     xl={{span: 6, offset: 2}}
                     lg={{span: 6, offset: 2}}
                 >
@@ -200,7 +200,7 @@ export default function AboutContentXXL() {
                     </Card>
                 </Col>
                 <Col
-                    xxl={{span: 4, offset: 1}}
+                    xxl={{span: 6, offset: 1}}
                     xl={{span: 6, offset: 1}}
                     lg={{span: 6, offset: 1}}
                 >
@@ -225,7 +225,7 @@ export default function AboutContentXXL() {
                     </Card>
                 </Col>
                 <Col
-                    xxl={{span: 4, offset: 1}}
+                    xxl={{span: 6, offset: 1}}
                     xl={{span: 6, offset: 1}}
                     lg={{span: 6, offset: 1}}
                 >
@@ -251,7 +251,7 @@ export default function AboutContentXXL() {
             </Row>
             <Row style={{paddingTop: "50px", paddingBottom: "100px"}}>
                 <Col
-                    xxl={{span: 4, offset: 5}}
+                    xxl={{span: 6, offset: 2}}
                     xl={{span: 6, offset: 2}}
                     lg={{span: 6, offset: 2}}
                 >
@@ -268,14 +268,14 @@ export default function AboutContentXXL() {
                             overflow: "hidden", boxShadow: "5px 8px 24px 5px rgba(255, 209, 81, 0.2)" }}
                     >
                         <p className="p-content3">
-                            The 21st century has brought everything closer together, making communication skills highly
-                            valuable in the world for former debaters, like Min Jin Lee and Celeste Ng.
+                            The 21st century has brought everyone closer together, making communication skills highly
+                            valuable in the world for former debaters, like authors Min Jin Lee and Celeste Ng.
                             At BDA, students learn the art of persuasive writing and speaking.
                         </p>
                     </Card>
                 </Col>
                 <Col
-                    xxl={{span: 4, offset: 1}}
+                    xxl={{span: 6, offset: 1}}
                     xl={{span: 6, offset: 1}}
                     lg={{span: 6, offset: 1}}
                 >
@@ -299,7 +299,7 @@ export default function AboutContentXXL() {
                     </Card>
                 </Col>
                 <Col
-                    xxl={{span: 4, offset: 1}}
+                    xxl={{span: 6, offset: 1}}
                     xl={{span: 6, offset: 1}}
                     lg={{span: 6, offset: 1}}
                 >

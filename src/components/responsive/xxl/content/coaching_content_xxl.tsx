@@ -54,7 +54,7 @@ export default function CoachingContentXXL() {
                             Designed to give you everything you need to improve.
 
                         </h4>
-                        <p className="p-content3" style={{color: "white", paddingTop: "30px"}}>
+                        <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
                             <b>Features include:</b>
                             <ul className="ul-custom">
                                 <li>1-hour sessions of private coaching (minimum 4 hours)</li>
@@ -85,7 +85,7 @@ export default function CoachingContentXXL() {
                             For debaters wanting to go to the next level by debaters who have been there.
                             Designed to achieve your greatest competitive ambitions.
                         </h4>
-                        <p className="p-content3" style={{color: "white", paddingTop: "30px"}}>
+                        <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
                             <b>Features include:</b>
                             <ul className="ul-custom">
                                 <li>1-hour sessions of private coaching (minimum 4 hours)</li>
@@ -120,7 +120,7 @@ export default function CoachingContentXXL() {
                             Hone in on the critical areas of improvement. Our skills kits offer a plethora of
                             custom-tailored packages aimed at what you need.
                         </h4>
-                        <p className="p-content3" style={{color: "white", paddingTop: "30px"}}>
+                        <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
                             <b>Kits include:</b>
                             <ul className="ul-custom">
                                 <li>Case writing kit</li>

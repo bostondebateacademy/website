@@ -9,10 +9,10 @@ import image_max from "../../../../images/aboutmax2.png";
 import video_sam from "../../../../videos/sam_testimonial_final.mp4";
 import video_alyssa from "../../../../videos/alyssa_testimonial_final.mp4";
 import image1 from "../../../../images/home1.png"
-import img_awards from "../../../../images/awards.png";
+import img_awards from "../../../../images/awards.png"
 
 
-export default function HomeContentSM() {
+export default function HomeContentXL() {
 
     const [flippedBen, setFlippedBen] = useState(false);
     const [flippedMax, setFlippedMax] = useState(false);
@@ -27,18 +27,14 @@ export default function HomeContentSM() {
 
     return (
         <div style={{marginTop: "100px"}}>
-            <Row>
+            <Row style={{paddingBottom: "150px"}}>
                 <Col
-                    sm={{span: 22, offset: 1}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 10, offset: 1}}
                 >
                     <Carousel1Text />
                 </Col>
-            </Row>
-            <Row style={{paddingTop: "50px", paddingBottom: "100px"}}>
                 <Col
-                    sm={{span: 22, offset: 1}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 11, offset: 1}}
                 >
                     <Carousel dots={true}
                               dotPosition="bottom"
@@ -56,18 +52,17 @@ export default function HomeContentSM() {
                     </Carousel>
                 </Col>
             </Row>
-            <Row style={{paddingBottom: "100px"}}>
+            <Row style={{paddingBottom: "200px"}}>
                 <Col
-                    sm={{span: 22, offset: 1}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 22, offset: 1}}
                 >
-                    <img src={img_awards} className="img-centered" style={{width: "100%"}} alt=""/>
+                    <img src={img_awards} className="img-centered" style={{width: "70%"}} alt=""/>
                 </Col>
             </Row>
-            <Row style={{paddingTop: "50px", background: "#F2F2F2"}}>
+
+            <Row style={{paddingTop: "100px", background: "#F2F2F2"}}>
                 <Col
-                    sm={{span: 22, offset: 1}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 22, offset: 1}}
                 >
                     <h1 className="h1-content" style={{paddingTop: "30px"}}>
                         The best team for the best students.
@@ -85,13 +80,12 @@ export default function HomeContentSM() {
                     </p>
                 </Col>
             </Row>
-            <Row style={{paddingTop: "50px", background: "#F2F2F2"}}>
+            <Row style={{paddingTop: "50px", paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    sm={{span: 16, offset: 4}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 8, offset: 3}}
                 >
                     <ReactCardFlip isFlipped={flippedBen} flipDirection="horizontal">
-                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", cursor: "pointer"}} alt=""/>
+                        <img src={image_ben} onClick={FlipBen} style={{width: "100%", objectFit: "cover", cursor: "pointer"}} alt=""/>
                         <Card
                             title={<h3 className="h3-content">Ben Carson</h3>}
                             // eslint-disable-next-line
@@ -102,14 +96,11 @@ export default function HomeContentSM() {
                         </Card>
                     </ReactCardFlip>
                 </Col>
-            </Row>
-            <Row style={{paddingTop: "50px", background: "#F2F2F2"}}>
                 <Col
-                    sm={{span: 16, offset: 4}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 8, offset: 2}}
                 >
                     <ReactCardFlip isFlipped={flippedMax} flipDirection="horizontal">
-                        <img src={image_max} onClick={FlipMax} style={{width: "100%", cursor: "pointer"}} alt=""/>
+                        <img src={image_max} onClick={FlipMax} style={{width: "100%", objectFit: "cover", cursor: "pointer"}} alt=""/>
                         <Card
                             title={<h3 className="h3-content">Max Albert</h3>}
                             // eslint-disable-next-line
@@ -122,10 +113,10 @@ export default function HomeContentSM() {
                 </Col>
                 <Divider style={{borderColor: "#2B2D42", borderWidth: 3, marginTop: "100px"}}/>
             </Row>
-            <Row style={{paddingTop: "50px", paddingBottom: "50px", background: "#F2F2F2"}}>
+
+            <Row style={{paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    sm={{span: 20, offset: 2}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 22, offset: 1}}
                 >
                     <h1 className="h1-content">
                         Student tested, Student approved.
@@ -134,7 +125,7 @@ export default function HomeContentSM() {
                               dotPosition="bottom"
                               effect="scrollx"
                               autoplaySpeed={5000}
-                              arrows={false}
+                              arrows={true}
                               autoplay={true}
                               nextArrow={<RightOutlined />}
                               prevArrow={<LeftOutlined/>}
@@ -147,12 +138,11 @@ export default function HomeContentSM() {
                         </div>
                     </Carousel>
                 </Col>
-                <Divider style={{borderColor: "#2B2D42", borderWidth: 3, marginTop: "50px"}}/>
+                <Divider style={{borderColor: "#2B2D42", borderWidth: 3, marginTop: "100px"}}/>
             </Row>
-            <Row style={{paddingBottom: "50px", background: "#F2F2F2"}}>
+            <Row style={{paddingBottom: "100px", background: "#F2F2F2"}}>
                 <Col
-                    sm={{span: 22, offset: 1}}
-                    xs={{span: 22, offset: 1}}
+                    xl={{span: 22, offset: 1}}
                 >
                     <Row>
                         <h1 className="h1-centered">
@@ -160,7 +150,7 @@ export default function HomeContentSM() {
                         </h1>
                     </Row>
                     <Row>
-                        <img src={image1} className="img-centered" style={{width: "100%"}} alt=""/>
+                        <img src={image1} className="img-centered" style={{width: "70%"}} alt=""/>
                     </Row>
                 </Col>
             </Row>
@@ -168,33 +158,29 @@ export default function HomeContentSM() {
     );
 }
 
-
 export function Carousel2Content1() {
     return (
         <div>
             <Row>
-                <p className="p-carousel-2">
-                    Meet Sam, <b>winner of the 2022 Silver Tournament of Champions.</b>
-                </p>
-            </Row>
-            <Row>
-                <Col span={24}>
+                <Col span={8} offset={0}>
                     <ReactPlayer
                         className='react-player fixed-bottom'
                         url= {video_sam}
+                        width="140%"
+                        height="100%"
                         volume={0.5}
-                        width="100%"
-                        height="auto"
                         controls = {true}
                         config={{ file: {
                                 attributes: {
                                     controlsList: 'nodownload nofullscreen noremoteplayback'
                                 }}}}
+                        style={{objectFit: "cover"}}
                     />
                 </Col>
-            </Row>
-            <Row style={{paddingTop: "25px"}}>
-                <Col span={24}>
+                <Col span={12} offset={4}>
+                    <p className="p-carousel-2" style={{paddingTop: "35px"}}>
+                        Meet Sam, <b>winner of the 2022 Silver Tournament of Champions.</b>
+                    </p>
                     <p className="p-carousel-2">
                         Through our coaching and curriculum, countless students have unlocked their true potential,
                         winning some of the most prestigious debate tournaments around the country against teams around the world.
@@ -212,28 +198,25 @@ export function Carousel2Content2() {
     return (
         <div>
             <Row>
-                <p className="p-carousel-2">
-                    Meet Alyssa, a <b>Computer Science major at Cornell University.</b>
-                </p>
-            </Row>
-            <Row>
-                <Col span={24}>
+                <Col span={8}>
                     <ReactPlayer
                         className='react-player fixed-bottom'
                         url= {video_alyssa}
+                        width="140%"
+                        height="100%"
                         volume={0.5}
-                        width="100%"
-                        height="auto"
                         controls = {true}
                         config={{ file: {
                                 attributes: {
                                     controlsList: 'nodownload nofullscreen noremoteplayback'
                                 }}}}
+                        style={{objectFit: "cover"}}
                     />
                 </Col>
-            </Row>
-            <Row style={{paddingTop: "25px"}}>
-                <Col span={24}>
+                <Col span={12} offset={4}>
+                    <p className="p-carousel-2" style={{paddingTop: "50px"}}>
+                        Meet Alyssa, a <b>Computer Science major at Cornell University.</b>
+                    </p>
                     <p className="p-carousel-2">
                         Debate instruction enhances critical thinking, builds a reservoir of worldly knowledge,
                         and prepares students for the University of their dreams.
@@ -265,9 +248,8 @@ export function Carousel1Text() {
                 </p>
             </Row>
             <Row>
-                <Col span={24}>
+                <Col span={8}>
                     <Button type="primary" block onClick={event =>  window.location.href='/classes'}
-                            style={{display: "block", marginLeft: "auto", marginRight: "auto", width: "30%"}}
                     >
                         Join Us!
                     </Button>

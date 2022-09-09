@@ -2,6 +2,7 @@ import React from "react";
 import {useMediaQuery} from "react-responsive";
 import HomeContentMD from "../responsive/md/content/home_content_md";
 import HomeContentXXL from "../responsive/xxl/content/home_content_xxl";
+import HomeContentXL from "../responsive/xl/content/home_content_xl";
 import HomeContentLG from "../responsive/lg/content/home_content_lg";
 import HomeContentSM from "../responsive/sm/content/home_content_sm";
 
@@ -23,7 +24,7 @@ export default function HomeContent() {
             {size_sm && <HomeContentSM />}
             {size_md && <HomeContentMD />}
             {size_lg && <HomeContentLG />}
-            {size_xl && <HomeContentXXL />}
+            {size_xl && <HomeContentXL />}
             {size_xxl && <HomeContentXXL />}
         </div>
     );
