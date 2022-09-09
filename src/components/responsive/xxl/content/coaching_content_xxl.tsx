@@ -51,6 +51,7 @@ export default function CoachingContentXXL() {
                     >
                         <h4 className="h4-card" style={{color: "white"}}>
                             Equip yourself with the barebones tools needed to find success in competition.
+                            Designed to give you everything you need to improve.
                         </h4>
                         <p className="p-card" style={{color: "white", paddingTop: "30px"}}>
                             <b>Features include:</b>
