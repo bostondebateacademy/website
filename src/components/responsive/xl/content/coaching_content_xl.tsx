@@ -108,7 +108,7 @@ export default function CoachingContentXL() {
                     lg={{span: 18, offset: 3}}
                 >
                     <Card
-                        title={<h3 className="h3-card">Skills Kits ($250 each)</h3>}
+                        title={<h3 className="h3-card">Skills Kits ($150 each)</h3>}
                         bordered={false}
                         // eslint-disable-next-line
                         style={{background: "#2b2d42", height: "auto", borderRadius: "20px", overflow: "hidden", position: "relative"}}
