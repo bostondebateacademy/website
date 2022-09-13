@@ -59,7 +59,7 @@ export default function ClassesContentXXL() {
                         Class Information
                     </h1>
                     <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                        We offer 4 levels for Middle School (MS) and 2 levels for High School (HS).
+                        Find which of our 6 levels fits your needs. Fall 2022 classes are online only.
                     </h2>
                 </Col>
             </Row>
