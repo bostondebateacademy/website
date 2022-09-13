@@ -16,7 +16,7 @@ export default function CoachingContentMD() {
                         Make every round a 30-point round.
                     </h1>
                     <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                        Get individualized assistance from world-class, highly experienced coaches.
+                        Get individualized virtual assistance from world-class, highly experienced coaches. All from the comfort of your home.
                     </h2>
                 </Col>
             </Row>
