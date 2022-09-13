@@ -146,7 +146,7 @@ export default function CoachingContentXXL() {
                         Learn more about our skills kits
                     </h1>
                     <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                        Each kit provides 3, 1.5-hour classes aimed at what you need most.
+                        Each kit provides three 1-hour classes aimed at what you need most.
                     </h2>
                 </Col>
             </Row>
