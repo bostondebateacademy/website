@@ -42,7 +42,7 @@ export default function ClassesContentLG() {
                         Classes start October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "center", marginTop: "-20px"}}>
-                        (want a try-out first? Click "join us" and let us know!)
+                        (All classes are online for our Fall 2022 semester. Want a try-out first? Click "join us" and let us know!)
                     </p>
                 </Col>
             </Row>
