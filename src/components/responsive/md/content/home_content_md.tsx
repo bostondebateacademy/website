@@ -69,7 +69,7 @@ export default function HomeContentMD() {
                         The best team for the best students.
                     </h1>
                     <p className="p-content3">
-                        Only two coaches have ever won the Middle School Debate Trifecta.
+                        Only two coaches have ever won Debate Trifecta.
                         Both teach at Boston Debate Academy.
                     </p>
                     <p className="p-content3">
