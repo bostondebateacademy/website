@@ -16,7 +16,7 @@ export default function CoachingContentMD() {
                         Make every round a 30-point round.
                     </h1>
                     <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                        Get individualized assistance from world-class, highly experienced coaches.
+                        Get individualized virtual assistance from world-class, highly experienced coaches. All from the comfort of your home.
                     </h2>
                 </Col>
             </Row>
@@ -103,7 +103,7 @@ export default function CoachingContentMD() {
                     xs={{span: 22, offset: 1}}
                 >
                     <Card
-                        title={<h3 className="h3-card">Skills Kits ($250 each)</h3>}
+                        title={<h3 className="h3-card">Skills Kits ($150 each)</h3>}
                         bordered={false}
                         // eslint-disable-next-line
                         style={{background: "#2b2d42", height: "auto", borderRadius: "20px", overflow: "hidden", position: "relative"}}
@@ -143,7 +143,7 @@ export default function CoachingContentMD() {
                         Learn more about our skills kits
                     </h1>
                     <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                        Each kit provides 3, 1.5-hour classes aimed at what you need most.
+                        Each kit provides three 1-hour classes aimed at what you need most.
                     </h2>
                 </Col>
             </Row>

@@ -42,7 +42,7 @@ export default function ClassesContentLG() {
                         Classes start October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "center", marginTop: "-20px"}}>
-                        (want a try-out first? Click "join us" and let us know!)
+                        (All classes are online for our Fall 2022 semester. Want a try-out first? Click "join us" and let us know!)
                     </p>
                 </Col>
             </Row>
@@ -68,7 +68,7 @@ export default function ClassesContentLG() {
                                 Class Information
                             </h1>
                             <h2 className="h2-centered" style={{marginTop: "-50px"}}>
-                                We offer 4 levels for Middle School (MS) and 2 levels for High School (HS).
+                                Find which of our 6 levels fits your needs. Fall 2022 classes are online only.
                             </h2>
                     </Row>
                     <Row>
