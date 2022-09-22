@@ -1,6 +1,6 @@
 import {Row, Col, Divider} from 'antd';
 import {MailOutlined, FacebookOutlined, InstagramOutlined} from '@ant-design/icons';
-import logo from "../../../../images/logo_bda.png";
+import logo from "../../../../images/logo_bda.webp";
 import React from "react";
 import '../styles.css'
 

@@ -1,7 +1,7 @@
 import type {RadioChangeEvent} from 'antd';
 import {Col, Row, Button, Radio, Collapse, Divider} from "antd";
 import React, {useState} from "react";
-import image1 from "../../../../images/classes1.png";
+import image1 from "../../../../images/classes1.webp";
 import {Link} from "react-router-dom";
 
 

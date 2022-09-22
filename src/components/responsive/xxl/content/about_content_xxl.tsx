@@ -1,11 +1,11 @@
 import {Card, Carousel, Col, Row} from "antd";
 import React, {useLayoutEffect, useRef, useState} from "react";
-import image1 from "../../../../images/bda1.png";
-import image2 from "../../../../images/bda2.png";
-import image3 from "../../../../images/bda3.png";
-import image4 from "../../../../images/about1.png"
-import image5 from "../../../../images/about2.png"
-import image6 from "../../../../images/about3.png"
+import image1 from "../../../../images/bda1.webp";
+import image2 from "../../../../images/bda2.webp";
+import image3 from "../../../../images/bda3.webp";
+import image4 from "../../../../images/about1.webp"
+import image5 from "../../../../images/about2.webp"
+import image6 from "../../../../images/about3.webp"
 import {LeftOutlined, RightOutlined} from "@ant-design/icons";
 import {
     IconBicep,

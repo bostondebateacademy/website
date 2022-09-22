@@ -8,7 +8,7 @@ import Routing from "./components/router/router";
 
 import 'antd/dist/antd.min.css';
 import './css/index.css';
-import logo_header from './images/logo_bda.png'
+import logo_header from './images/logo_bda.webp'
 import PageFooterSignUp from "./components/layout/footer_signup";
 import PageFooterCopyright from "./components/layout/footer_copyright";
 

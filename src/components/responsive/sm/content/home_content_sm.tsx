@@ -3,13 +3,13 @@ import {RightOutlined, LeftOutlined, ArrowLeftOutlined} from '@ant-design/icons'
 import React, {useState} from "react";
 import ReactPlayer from "react-player";
 import ReactCardFlip from "react-card-flip";
-import image_ben from "../../../../images/aboutben2.png";
+import image_ben from "../../../../images/aboutben2.webp";
 import {BioBen, BioMax} from "../../../content/text_content";
-import image_max from "../../../../images/aboutmax2.png";
+import image_max from "../../../../images/aboutmax2.webp";
 import video_sam from "../../../../videos/sam_testimonial_final.mp4";
 import video_alyssa from "../../../../videos/alyssa_testimonial_final.mp4";
-import image1 from "../../../../images/home1.png"
-import img_awards from "../../../../images/awards.png";
+import image1 from "../../../../images/home1.webp"
+import img_awards from "../../../../images/awards.webp";
 
 
 export default function HomeContentSM() {
