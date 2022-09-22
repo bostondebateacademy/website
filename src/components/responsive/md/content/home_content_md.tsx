@@ -1,15 +1,13 @@
 import {Col, Row, Carousel, Button, Divider, Card} from "antd";
 import {RightOutlined, LeftOutlined, ArrowLeftOutlined} from '@ant-design/icons';
 import React, {useState} from "react";
-import ReactPlayer from "react-player";
 import ReactCardFlip from "react-card-flip";
 import image_ben from "../../../../images/aboutben2.webp";
 import {BioBen, BioMax} from "../../../content/text_content";
 import image_max from "../../../../images/aboutmax2.webp";
-import video_sam from "../../../../videos/sam_testimonial_final.mp4";
-import video_alyssa from "../../../../videos/alyssa_testimonial_final.mp4";
 import image1 from "../../../../images/home1.webp"
 import img_awards from "../../../../images/awards.webp";
+import {VidAlyssa, VidSam} from "../../../content/video_content";
 
 
 export default function HomeContentMD() {
@@ -163,18 +161,7 @@ export function Carousel2Content1() {
         <div>
             <Row>
                 <Col span={8} offset={0}>
-                    <ReactPlayer
-                        className='react-player fixed-bottom'
-                        url= {video_sam}
-                        volume={0.5}
-                        width="139%"
-                        height="auto"
-                        controls = {true}
-                        config={{ file: {
-                                attributes: {
-                                    controlsList: 'nodownload nofullscreen noremoteplayback'
-                                }}}}
-                    />
+                    <VidSam />
                 </Col>
                 <Col span={12} offset={4}>
                     <p className="p-carousel-2">
@@ -202,18 +189,7 @@ export function Carousel2Content2() {
         <div>
             <Row>
                 <Col span={8}>
-                    <ReactPlayer
-                        className='react-player fixed-bottom'
-                        url= {video_alyssa}
-                        volume={0.5}
-                        width="139%"
-                        height="auto"
-                        controls = {true}
-                        config={{ file: {
-                                attributes: {
-                                    controlsList: 'nodownload nofullscreen noremoteplayback'
-                                }}}}
-                    />
+                    <VidAlyssa />
                 </Col>
                 <Col span={12} offset={4}>
                     <p className="p-carousel-2">

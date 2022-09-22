@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic&subset=latin,latin-ext');
-
 /*
 TypeTogether Webfont Licence Agreement, version 2.0
 © Copyright TypeTogether 2020. All Rights Reserved
@@ -22,12 +19,10 @@ body {
 }
 
 body {
-    font-family: 'Soleil', 'Montserrat', sans-serif;
+    font-family: 'Soleil', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 #root {
     display: flex;
