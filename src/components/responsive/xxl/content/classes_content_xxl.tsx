@@ -42,11 +42,20 @@ export default function ClassesContentXXL() {
                     >
                         Join Us!
                     </Button>
-                    <p className="p-content2" style={{color: "white", paddingTop: "30px"}}>
+                    <p className="p-content3" style={{color: "white", paddingTop: "30px"}}>
                         Classes start October 10th.
                     </p>
-                    <p style={{color: "white", textAlign: "center", marginTop: "-20px"}}>
+                    <p style={{color: "white", textAlign: "left", marginTop: "-20px"}}>
                         (All classes are online for our Fall 2022 semester. Want a try-out first? Click "join us" and let us know!)
+                    </p>
+                    <p className="p-content3" style={{color: "white"}}>
+                        Grades 5-12
+                    </p>
+                    <p className="p-content3" style={{color: "white"}}>
+                        Length: 11 weeks (10/10 - 12/19)
+                    </p>
+                    <p className="p-content3" style={{color: "white"}}>
+                        Tuition: <span style={{textDecoration: "line-through"}}>$999</span> <span style={{textDecoration: "underline", color: "#FFD151"}}>$800 <span style={{fontSize: "14pt"}}>(20% cheaper than our competitors!)</span></span>
                     </p>
                 </Col>
             </Row>
