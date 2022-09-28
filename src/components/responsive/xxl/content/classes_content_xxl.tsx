@@ -189,6 +189,7 @@ export default function ClassesContentXXL() {
     );
 }
 
+
 export function CarouselContent1() {
     return (
         <div>
@@ -208,6 +209,7 @@ export function CarouselContent1() {
         </div>
     )
 }
+
 
 export function CarouselContent2() {
     return (
