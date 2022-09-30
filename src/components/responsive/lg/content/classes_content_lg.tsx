@@ -42,7 +42,7 @@ export default function ClassesContentLG() {
                         Classes start October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "left", marginTop: "-20px"}}>
-                    All classes are online for our Fall 2022 semester. <br>
+                    All classes are online for our Fall 2022 semester. <br><br>
                     (Want a try-out first? Can't enroll by the 10th? No problem. We offer rolling admission and try-outs. Click "join us" and let us know!)                    </p>
                     <p className="p-content3" style={{color: "white"}}>
                         Grades 5-12
