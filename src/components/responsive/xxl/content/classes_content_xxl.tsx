@@ -43,10 +43,11 @@ export default function ClassesContentXXL() {
                         Join Us!
                     </Button>
                     <p className="p-content3" style={{color: "white", paddingTop: "30px"}}>
-                        Classes start October 10th.
+                        Rolling admission starts October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "left", marginTop: "-20px"}}>
-                        (All classes are online for our Fall 2022 semester. Want a try-out first? Click "join us" and let us know!)
+                        All classes are online for our Fall 2022 semester.
+                        (Want a try-out first? Can't enroll by the 10th? No problem. We offer rolling admission and try-outs. Click "join us" and let us know!)
                     </p>
                     <p className="p-content3" style={{color: "white"}}>
                         Grades 5-12
