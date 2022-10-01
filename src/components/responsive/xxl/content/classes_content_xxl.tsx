@@ -21,7 +21,7 @@ export default function ClassesContentXXL() {
 
     return (
         <div>
-            <Row>
+            <Row align="middle">
                 <Col
                      xxl={{span: 12, offset: 0}}
                      xl={{span: 12, offset: 0}}
@@ -32,7 +32,7 @@ export default function ClassesContentXXL() {
                     xxl={{span: 8, offset: 2}}
                     xl={{span: 8, offset: 2}}
                 >
-                    <h1 className="h1-carousel" style={{color: "white", paddingTop: "250px", paddingBottom: "50px", textAlign: "center"}}>
+                    <h1 className="h1-carousel" style={{color: "white", paddingBottom: "50px", textAlign: "center"}}>
                         Join the most prestigous debate academy in North America.
                     </h1>
                     <Button
@@ -46,7 +46,7 @@ export default function ClassesContentXXL() {
                         Rolling admission starts October 10th.
                     </p>
                     <p style={{color: "white", textAlign: "left", marginTop: "-20px"}}>
-                        All classes are online for our Fall 2022 semester.
+                        All classes are online for our Fall 2022 semester. <br />
                         (Want a try-out first? Can't enroll by the 10th? No problem. We offer rolling admission and try-outs. Click "join us" and let us know!)
                     </p>
                     <p className="p-content3" style={{color: "white"}}>
